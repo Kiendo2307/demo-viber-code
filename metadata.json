@@ -1,0 +1,6 @@
+{
+  "name": "Robotics & STEM Lab",
+  "description": "Phòng thí nghiệm Mô phỏng và Lập trình Robot STEM & AI tương tác trực tiếp cho học sinh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

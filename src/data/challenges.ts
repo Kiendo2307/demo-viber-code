@@ -1,0 +1,78 @@
+import { Challenge } from '../types';
+
+export const ROBOT_CHALLENGES: Challenge[] = [
+  {
+    id: 1,
+    title: 'Thử thách 1: Tốc độ về đích',
+    description: 'Lái hoặc lập trình Robot đi từ vị trí Xuất phát tới Điểm đích trong thời gian ngắn nhất!',
+    goal: 'Đến điểm Đích trong thời gian dưới 15 giây.',
+    mapId: 'map_1',
+    maxTime: 20,
+    minStars: 1,
+    targetScore: 100,
+    requirements: {
+      reachFinish: true,
+      maxCollisions: 0,
+    },
+  },
+  {
+    id: 2,
+    title: 'Thử thách 2: Vượt qua chướng ngại vật',
+    description: 'Điều khiển Robot vượt qua các chướng ngại vật mà không hề xảy ra va chạm.',
+    goal: 'Về đích an toàn, va chạm = 0, thu thập ít nhất 2 viên ngọc quý.',
+    mapId: 'map_2',
+    maxTime: 45,
+    minStars: 2,
+    targetScore: 250,
+    requirements: {
+      reachFinish: true,
+      collectGems: 2,
+      maxCollisions: 0,
+    },
+  },
+  {
+    id: 3,
+    title: 'Thử thách 3: Thoát khỏi Mê cung',
+    description: 'Lập trình Robot tự tìm đường thoát khỏi Mê cung phức tạp.',
+    goal: 'Thoát khỏi mê cung và thu thập đủ 3 viên ngọc.',
+    mapId: 'map_3',
+    maxTime: 60,
+    minStars: 2,
+    targetScore: 400,
+    requirements: {
+      reachFinish: true,
+      collectGems: 3,
+      maxCollisions: 2,
+    },
+  },
+  {
+    id: 4,
+    title: 'Thử thách 4: Dò đường tự động',
+    description: 'Viết chương trình khối lệnh giúp Robot đi theo vệt đường màu đen tiêu chuẩn.',
+    goal: 'Hoàn thành đường dò line và về đích thành công.',
+    mapId: 'map_4',
+    maxTime: 50,
+    minStars: 3,
+    targetScore: 500,
+    requirements: {
+      reachFinish: true,
+      lineFollow: true,
+      maxCollisions: 0,
+    },
+  },
+  {
+    id: 5,
+    title: 'Thử thách 5: Thu gom toàn bộ tài nguyên',
+    description: 'Chinh phục đấu trường STEM: Thu gom tất cả 5 viên ngọc quý trên toàn bộ bản đồ trước khi nạp lại năng lượng.',
+    goal: 'Thu thập đủ 5 ngọc quý và di chuyển về Trạm nạp (Đích).',
+    mapId: 'map_5',
+    maxTime: 75,
+    minStars: 3,
+    targetScore: 750,
+    requirements: {
+      reachFinish: true,
+      collectGems: 5,
+      maxCollisions: 1,
+    },
+  },
+];
